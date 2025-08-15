@@ -114,4 +114,8 @@ Then open your browser at:
 
 ---
 
+##🛡️ Disclaimer
 
+This application is for research and educational purposes only and not a substitute for professional medical advice.
+
+---
