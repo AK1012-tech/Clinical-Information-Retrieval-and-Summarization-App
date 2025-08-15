@@ -1,5 +1,3 @@
----
-
 # 🏥 Clinical Information Retrieval and Summarization App
 
 A **Streamlit-based** application that helps healthcare professionals and researchers **retrieve, summarize, and analyze** clinical information from two main sources:
