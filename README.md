@@ -97,9 +97,10 @@ Then open your browser at:
 
 ## 📸 Demo Screenshots
 
-<img width="940" height="480" alt="image" src="https://github.com/user-attachments/assets/6910b19d-22cf-405d-a26d-5edc23e182d8" />
+<img width="2748" height="1403" alt="image" src="https://github.com/user-attachments/assets/9579f256-4c56-4831-95b5-f17b63e8ac5a" />
 
-<img width="940" height="420" alt="image" src="https://github.com/user-attachments/assets/a3996638-1466-42f1-8baa-d05f2b88ec27" />
+
+<img width="2764" height="1236" alt="image" src="https://github.com/user-attachments/assets/42d3370d-dd96-457d-85dc-79ef32db7a37" />
 
 
 ---
