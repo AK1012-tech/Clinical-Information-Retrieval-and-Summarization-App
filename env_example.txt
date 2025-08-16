@@ -1,6 +1,0 @@
-# Copy to .env and fill in your key
-GROQ_API_KEY=
-
-# Change these if you like
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
-CHROMA_DIR=data/embeddings
