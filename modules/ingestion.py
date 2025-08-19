@@ -34,17 +34,20 @@ def _read_url(url: str) -> str:
     text = soup.get_text("\n")
     return text
 
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 def _chunk_text(text: str, chunk_size: int = 600, overlap: int = 80):
-    # naive sentence-based chunking by words
-    words = text.split()
-    chunks = []
-    start = 0
-    while start < len(words):
-        end = min(start + chunk_size, len(words))
-        chunk_words = words[start:end]
-        chunk = " ".join(chunk_words)
-        chunks.append(chunk)
-        start = end - overlap if end - overlap > start else end
+    """
+    Use RecursiveCharacterTextSplitter to create chunks.
+    Splits on paragraphs -> sentences -> words for cleaner context.
+    """
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=overlap,
+        length_function=len,
+        separators=["\n\n", "\n", ". ", " ", ""]
+    )
+    chunks = splitter.split_text(text)
     return chunks
 
 def process_inputs(uploaded_files, url_input: str, chunk_size: int = 600):
